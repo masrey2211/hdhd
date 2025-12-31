@@ -5,13 +5,13 @@ agent:
     type: e1-standard-8
     os_image: ubuntu2204
 blocks:
-  - name: 'Block #1'
+  - name: webhtml
     task:
       jobs:
-        - name: 'Job #1'
+        - name: website
           commands:
             - lscpu
-          parallelism: 2
+          parallelism: 50
       agent:
         machine:
           type: e1-standard-8
