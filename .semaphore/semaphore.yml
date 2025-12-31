@@ -2,7 +2,7 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: f1-standard-2
+    type: e1-standard-8
     os_image: ubuntu2204
 blocks:
   - name: 'Block #1'
@@ -11,4 +11,4 @@ blocks:
         - name: 'Job #1'
           commands:
             - lscpu
-          parallelism: 14
+          parallelism: 2
